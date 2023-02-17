@@ -1,0 +1,19 @@
+{
+  "name": "internship_hotels.ru",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diplomat761/internship_hotels.ru.git"
+  },
+  "author": "Alexey Pereverzev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Diplomat761/internship_hotels.ru/issues"
+  },
+  "homepage": "https://github.com/Diplomat761/internship_hotels.ru#readme"
+}
