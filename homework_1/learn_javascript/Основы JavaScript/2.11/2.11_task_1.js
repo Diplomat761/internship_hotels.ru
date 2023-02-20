@@ -1,3 +1,7 @@
-if ("0") {
-   console.log('Да, выведется, так как "0" - истинно');;
- }
+const ageValue = (age) => {
+   (age >= 14 && age <= 90) 
+   ? console.log("Мы в диапозоне!") 
+   : console.log("Мы где-то за пределами.");
+}
+
+console.log(ageValue(13));

@@ -15,10 +15,15 @@ const products = [
 ];
 
 function filterProducts(query) {
+   // Разбиваем запрос на части
    const parts = query.split("&");
+   // Фильтруем массив
    return products.filter((product) => {
+      // Проверяем, удовлетворяет ли каждый фрагмент запроса условиям
       return parts.every((part) => {
+         // Разбиваем каждый фрагмент на три части
          const [field, operator, value] = part.split("-");
+         // Выбираем нужный оператор и сравниваем значение поля с заданным значением
          switch (operator) {
             case "contains":
                return product[field].includes(value);
