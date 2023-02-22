@@ -1,4 +1,4 @@
-const myModule = {
+const strOps = {
    capitalizeFirstLetter: function (str) {
       // Возвращаем первый символ строки, ставим его в верхний регистр + оставшаяся часть, а все  остальные символы строки в нижний регистр
       return console.log("1.1: " + str.charAt(0).toUpperCase() + str.slice(1).toLowerCase());;
@@ -38,6 +38,6 @@ const myModule = {
    }
 };
 
-export default myModule;
+export default strOps;
 
 

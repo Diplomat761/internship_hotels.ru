@@ -1,13 +1,13 @@
-import myModule from './modules/MyModule.js';
+import strOps from './modules/StrOps.js';
 import bigIntOps from './modules/BigIntOps.js';
 
 
 
 // Задание 1
-myModule.capitalizeFirstLetter('СТАЖИРОВОЧКА');
-myModule.transformString('Вот пример строки,в которой     используются знаки препинания.После знаков должны стоять пробелы , а перед знаками их быть не должно .    Если есть лишние подряд идущие пробелы, они должны быть устранены.');
-myModule.countWords('Если я всё правильно написал, то тут выведется число десять');
-myModule.countUniqueWords('Текст, в котором тоже слово текст несколько раз встречается и слово тоже');
+strOps.capitalizeFirstLetter('СТАЖИРОВОЧКА');
+strOps.transformString('Вот   пример строки  ,в которой     используются знаки   препинания  .');
+strOps.countWords('Если я всё правильно написал, то тут выведется число десять');
+strOps.countUniqueWords('Текст, в котором тоже слово текст несколько раз встречается и слово тоже');
 
 
 // Задание 2
