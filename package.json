@@ -1,20 +1,20 @@
 {
-  "name": "internship_hotels.ru",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-   "start": "node --experimental-modules index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Diplomat761/internship_hotels.ru.git"
-  },
-  "author": "Alexey Pereverzev",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Diplomat761/internship_hotels.ru/issues"
-  },
-  "homepage": "https://github.com/Diplomat761/internship_hotels.ru#readme"
+   "name": "internship_hotels.ru",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "type": "module",
+   "scripts": {
+      
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Diplomat761/internship_hotels.ru.git"
+   },
+   "author": "Alexey Pereverzev",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/Diplomat761/internship_hotels.ru/issues"
+   },
+   "homepage": "https://github.com/Diplomat761/internship_hotels.ru#readme"
 }
