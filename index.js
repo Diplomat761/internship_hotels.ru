@@ -23,7 +23,8 @@ bigIntOps.divide(a, b);
 // Задание 3
 console.log("Задание 3: ");
 
-const filter_1 = "name-contains-or&price->=-0&quantity->=-2&description-starts-a";
-const filter_2 = "name-starts-fd&quantity-=-5";
+const filter_1 = "name-contains-an&price->=-20&quantity->=-2&description-ends-sty";
+const filter_2 = "name-starts-a&quantity-=-8";
 
 console.log(filterProducts(filter_1));
+console.log(filterProducts(filter_2));

@@ -8,10 +8,10 @@ class Product {
 }
 
 const products = [
-   new Product("fdProduct 1", 10, 5, "This is product 1a"),
-   new Product("Productor 2", 20, 6, "aThis is product 2c"),
-   new Product("Productor 3", 30, 8, "aThis is product 3"),
-   new Product("Product 4", 40, 2, "cThis is product 4"),
+   new Product("apple", 10, 8, "it has a lot of iron"),
+   new Product("banana", 20, 6, "yellow, long and tasty"),
+   new Product("avocado", 30, 8, "perfect for breakfast"),
+   new Product("mango", 40, 2, "beautiful, juicy, tasty"),
 ];
 
 function filterProducts(query) {
