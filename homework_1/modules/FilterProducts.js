@@ -48,9 +48,8 @@ function filterProducts(query) {
    });
 }
 
+export default filterProducts;
 
 
 
-console.log(filterProducts("name-contains-or&price->=-0&quantity->=-2&description-starts-a"));
-console.log(filterProducts("name-starts-fd&quantity-=-5"));
 
