@@ -5,18 +5,7 @@ class Product {
       this.quantity = quantity;
       this.description = description;
    }
-
-}
-
-const products = [
-   new Product("apple", 10, 8, "it has a lot of iron"),
-   new Product("banana", 20, 6, "yellow, long and tasty"),
-   new Product("avocado", 30, 8, "perfect for breakfast"),
-   new Product("mango", 40, 2, "beautiful, juicy, tasty"),
-];
-
-const productMetod = {
-   filter: (query) => {
+   static filterProducts(query) {
       // Разбиваем запрос на части
       const parts = query.split("&");
       // Фильтруем массив
@@ -51,7 +40,21 @@ const productMetod = {
    }
 }
 
-export default productMetod;
+
+const products = [
+   new Product("apple", 10, 8, "it has a lot of iron"),
+   new Product("banana", 20, 6, "yellow, long and tasty"),
+   new Product("avocado", 30, 8, "perfect for breakfast"),
+   new Product("mango", 40, 2, "beautiful, juicy, tasty"),
+];
+
+
+
+const query_1 = "name-contains-an&price->=-20&quantity->=-2&description-ends-sty";
+const query_2 = "name-starts-a&quantity-=-8";
+const filteredProducts = Product.filterProducts(query_1);
+console.log(filteredProducts);
+
 
 
 
