@@ -1,6 +1,6 @@
 import myModule from './modules/MyModule.js';
 import bigIntOps from './modules/BigIntOps.js';
-import filterProducts from './modules/FilterProducts.js';
+import productMetod from './modules/FilterProducts.js';
 
 
 // Задание 1
@@ -26,5 +26,5 @@ console.log("Задание 3: ");
 const filter_1 = "name-contains-an&price->=-20&quantity->=-2&description-ends-sty";
 const filter_2 = "name-starts-a&quantity-=-8";
 
-console.log(filterProducts(filter_1));
-console.log(filterProducts(filter_2));
+console.log(productMetod.filter(filter_1));
+console.log(productMetod.filter(filter_2));

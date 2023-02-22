@@ -5,6 +5,7 @@ class Product {
       this.quantity = quantity;
       this.description = description;
    }
+
 }
 
 const products = [
@@ -14,41 +15,45 @@ const products = [
    new Product("mango", 40, 2, "beautiful, juicy, tasty"),
 ];
 
-function filterProducts(query) {
-   // Разбиваем запрос на части
-   const parts = query.split("&");
-   // Фильтруем массив
-   return products.filter((product) => {
-      // Проверяем, удовлетворяет ли каждый фрагмент запроса условиям
-      return parts.every((part) => {
-         // Разбиваем каждый фрагмент на три части
-         const [field, operator, value] = part.split("-");
-         // Выбираем нужный оператор и сравниваем значение поля с заданным значением
-         switch (operator) {
-            case "contains":
-               return product[field].includes(value);
-            case "starts":
-               return product[field].startsWith(value);
-            case "ends":
-               return product[field].endsWith(value);
-            case "<":
-               return product[field] < Number(value);
-            case "=":
-               return product[field] === Number(value);
-            case ">":
-               return product[field] > Number(value);
-            case "<=":
-               return product[field] <= Number(value);
-            case ">=":
-               return product[field] >= Number(value);
-            default:
-               return false;
-         }
+const productMetod = {
+   filter: (query) => {
+      // Разбиваем запрос на части
+      const parts = query.split("&");
+      // Фильтруем массив
+      return products.filter((product) => {
+         // Проверяем, удовлетворяет ли каждый фрагмент запроса условиям
+         return parts.every((part) => {
+            // Разбиваем каждый фрагмент на три части
+            const [field, operator, value] = part.split("-");
+            // Выбираем нужный оператор и сравниваем значение поля с заданным значением
+            switch (operator) {
+               case "contains":
+                  return product[field].includes(value);
+               case "starts":
+                  return product[field].startsWith(value);
+               case "ends":
+                  return product[field].endsWith(value);
+               case "<":
+                  return product[field] < Number(value);
+               case "=":
+                  return product[field] === Number(value);
+               case ">":
+                  return product[field] > Number(value);
+               case "<=":
+                  return product[field] <= Number(value);
+               case ">=":
+                  return product[field] >= Number(value);
+               default:
+                  return false;
+            }
+         });
       });
-   });
+   }
 }
 
-export default filterProducts;
+export default productMetod;
+
+
 
 
 

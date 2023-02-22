@@ -16,9 +16,9 @@ const myModule = {
       // Удаляем все пробелы,разбиваем строку на массив слов и возвращаем колличество элементов в массиве 
       return console.log("1.3: " + str.trim().split(/\s+/).length);;
    },
-   countUniqueWords: function (text) {
+   countUniqueWords: function (str) {
       // Разбиваем текст на массив слов, и приводим к нижнему регистру 
-      const words = text.toLowerCase().split(/[ ,.!?]+/);
+      const words = str.toLowerCase().split(/[ ,.!?]+/);
       // Создаем пустой объект для подсчета повторений
       const wordCounts = {};
       // Проходим по массиву слов и увеличиваем счетчики для каждого слова
